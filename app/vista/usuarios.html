@@ -1,0 +1,53 @@
+<div id="generalUsuarios" class="container">
+
+<div class="main row">
+
+<div class="row">
+<div class="intro col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+<img src="../assets/images/control de usuarios.png" alt="Control de Usuarios"/>
+</div>
+
+</div>
+
+
+
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="forumlariousuario">
+
+<h2>Añade los datos de tu personaje..</h2>
+
+<form #añadeUsuario="ngForm" (ngSubmit)= "onSubmit()">
+
+<p>Nombre del personaje principal:</p>
+<p>
+   <input type="text" #personajeusuario="ngForm" ngControl="personajeusuario" [(ngModel)]="nuevoUsuario.personajeusuario" required minlength="4" />
+</p>
+
+<p>Clase del personaje principal:</p>
+<p>
+   <input type="text" #claseusuario="ngForm" ngControl="claseusuario" [(ngModel)]="nuevoUsuario.claseusuario" required pattern="[A-Za-z\s]*" />
+</p>
+
+<p>Rama principal y secundaria del personaje principal:</p>
+<p>
+   <input type="text" #ramasusuario="ngForm" ngControl="ramasusuario" [(ngModel)]="nuevoUsuario.ramasusuario" required/>
+</p>
+
+<p>Profesiones que tiene el personaje principal:</p>
+<p>
+   <input type="text" #profesionesusuario="ngForm" ngControl="profesionesusuario" [(ngModel)]="nuevoUsuario.profesionesusuario" required pattern="[A-Za-z\s]*" />
+</p>
+
+<p>Alters dentro de la guild:</p>
+<p>
+   <input type="text" #altersusuario="ngForm" ngControl="altersusuario" [(ngModel)]="nuevoUsuario.altersusuario" required minlength="10" />
+</p>
+
+<span id="botones" class="input-group-btn col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <button id="usuariobtn1" class="btn btn-default" type="submit">Enviar datos</button>
+    <button id="usuariobtn2" class="btn btn-default" type="reset">Borrar Todo</button>
+</span>
+
+</form>
+
+</div>

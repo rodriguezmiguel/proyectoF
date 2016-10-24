@@ -1,0 +1,52 @@
+<div id="generalCalendario" class="container">
+
+<div class="main row">
+
+<div class="row">
+<div class="eventos col-xs-12 col-sm-12 col-md-4 col-lg-4">
+
+<img src="../assets/images/calendario.png" alt="eventos"/>
+</div>
+
+</div>
+
+
+<div class="eventos col-xs-12 col-sm-12 col-md-4 col-lg-4">
+<p>Con este sistema pretendemos que los miembros de la guild propongan, organicen y hagan sus propios eventos. Con este calendario podrán enviar la sugerencia, se revisarán y añadirán al calendario para que quien quiera apuntarse, lo haga y sepa exactamente la fecha y en que consistirá dicho evento.</p>
+<p>Para ello dejamos un breve formulario con lo que creemos, es la información necesaria que necesitan los demás miembros para saber si el evento les interesará o no y si podrán asistir.</p>
+
+<form class="eventos">
+
+   <fieldset id="eventosform" form="eventoform">
+
+   <legend>Propuesta de Evento</legend>
+
+   <p><strong>- Nombre del Evento: </strong>  <input type="text" name="nombre" autofocus required /></p>
+   <p><strong>- Pj que lo organiza: </strong>  <input type="text" name="pais" required /></p>
+   <p><strong>- Fecha del Evento: </strong><input type="date" name="fecha" required/></p>
+   <p><strong>- Hora del Evento: </strong><input type="time" name="hora" required/></p>
+   <p><strong>- Descripción del Evento: </strong></p> <p> <textarea rows="10" cols="45" required></textarea></p>
+   </fieldset>
+
+   <span id="botoneseve" class="input-group-btn">
+    <button id="boton1" class="btn btn-default" type="submit">Enviar Apply</button>
+    <button id="boton2" class="btn btn-default" type="reset">Borrar Todo</button>
+</span>
+
+ </form>
+
+
+</div>
+
+<div id="calen" class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+<iframe id="calendario" src="https://calendar.google.com/calendar/embed?src=alniga46tt2ns3nse1fajcgkqs%40group.calendar.google.com&ctz=Europe/Madrid" width="750" height="697" frameborder="0" scrolling="no"></iframe>
+</div>
+
+</div>
+
+
+
+
+
+
+</div>

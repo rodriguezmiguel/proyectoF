@@ -1,0 +1,79 @@
+
+<div id="general" class="container">
+
+
+
+<div id="logo">
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><img src="../assets/images/logo.png"  width="300" height="auto"/></div>
+</div>
+
+<div>
+
+   <div id="presentacion" class="col-xs-12 col-sm-12 hidden-md col-lg-12">
+      <p id="entidades"><img src="../assets/images/ENTIDADESDESCONOCIDAS.png" alt="ENTIDADES DESCONOCIDAS"></p>
+   </div>
+
+
+    <div id="video" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+     <iframe id="cata" width="560" height="315" src="https://www.youtube.com/embed/_nXJ564UYjY" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+
+
+   <hr id="hr" class="hidden-xs col-sm-10  col-md-10 col-lg-11">
+
+
+	<div class="row" id="historia">
+
+    <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+    <br/>
+      <p>Un antiguo mal duerme en Infralar, el dominio de la tierra en el Plano Elemental. Escondido en un santuario recluido, el corrupto Dragón Aspecto Alamuerte ha esperado, recuperándose de las heridas de su última batalla contra Azeroth y buscando el momento oportuno para poder reconvertir el mundo en fuego líquido.</p>
+
+      <p>Pronto, Alamuerte el Destructor volverá a Azeroth y su erupción de Infralar dividirá el mundo, dejando una herida infectada en los continentes. Mientras la Horda y la Alianza se apresuran hacia el epicentro del cataclismo, los reinos de Azeroth serán testigos de cambios sísmicos de poder, el despertar de la guerra de los elementos y la aparición de héroes insólitos que se alzarán para proteger su mundo, traumatizado y deteriorado, de la devastación absoluta.</p>
+
+      <p>La tercera expansión de Blizzard Entertainment para World of Warcraft altera la faz de Azeroth para siempre, tras la destrucción provocada por el despertar de Alamuerte, dando nueva forma a la tierra y desvelando secretos sellados hace mucho tiempo. Los jugadores podrán volver a experimentar las zonas conocidas de Kalimdor y los Reinos del Este, zonas reconstruidas por el cataclismo y llenas de nuevas oportunidades de aventura.</p>
+
+      <p>En un esfuerzo por sobrevivir al devastador cataclismo, dos nuevas razas de juego, LOS FEROCANIS y LOS GOBLINS, se unirán a la lucha entre la Alianza y la Horda. Mientras los jugadores suben hasta el nuevo máximo nivel 85, explorarán zonas recién descubiertas, adquirirán nuevos niveles de poder y se enfrentarán a Alamuerte en una batalla para determinar el destino del mundo.</p>
+
+      </div>
+
+      <div id="alamuerte" class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+      <img class="imagenalamuerte" src="../assets/images/luchaalamuerte.jpg" width="450" height="auto">
+      <img class="imagenalamuerte" src="../assets/images/liberacionalamuerte.jpg" width="450" height="auto">
+      <img class="imagenalamuerte" src="../assets/images/ventoralamuerte.jpg" width="450" height="auto">
+      </div>
+
+     </div>
+
+
+<hr id="hr">
+
+
+<div class="container" >
+
+                          <div class="row">
+                      <div class="hidden-xs hidden-sm col-md-12 col-lg-12">
+                        <carousel [interval]="NextPhotoInterval" [noWrap]="noLoopSlides">
+                          <slide *ngFor="#slidez of slides; #index=index"
+                                 [active]="slidez.active">
+                            <img [src]="slidez.image" width="auto" height="500" style="margin:auto;">
+                            
+
+                            <div class="carousel-caption">
+                              
+                            </div>
+                          </slide>
+                        </carousel>
+                      </div>
+
+
+                    </div>
+
+     	</div><br/><br/>
+
+</div>
+
+
+
+
+

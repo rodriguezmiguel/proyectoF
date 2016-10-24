@@ -1,0 +1,510 @@
+<div id="generalguerrero"  class="container">
+
+<div class="main row">
+
+
+	<div class="intro col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+	<img src="../assets/images/clases/warrior/guerrero.png" alt="guerrero"/>
+	</div>
+
+
+	<div class="intro col-xs-12 col-sm-12 col-md-12 col-lg-12">
+	<p><strong>Señores de la guerra</strong></p>
+	<p>Mientras ha durado la guerra, los héroes de cada raza han intentado dominar el arte de la batalla. Los guerreros combinan fuerza, liderazgo y un amplio conocimiento de armas y armaduras para crear el caos durante el glorioso combate. Algunos protegen desde las primeras líneas con escudos, bloqueando a los enemigos mientras los aliados apoyan a los guerreros desde detrás con hechizos y arcos. Otros renuncian al escudo y desatan su ira contra la amenaza más próxima con una variedad de armas mortales.</p>
+	<p>Los guerreros se equipan con cuidado para el combate y se enfrentan a sus enemigos de frente, dejando que los ataques resbalen contra su pesada armadura. Usan diversas tácticas de combate y una gran variedad de tipos de armas para proteger a los combatientes menos hábiles. Los guerreros deben controlar cuidadosamente su ira (el poder detrás de sus ataques más fuertes) para maximizar su efectividad en el combate.</p>
+
+	
+	</div>
+
+	
+	<div id="armas" class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+
+		<p>En esta sección podrás encontrar las guías de guerrero armas tanto PvE como PvP, para acceder a la que usted desee solo haga click encima.</p>
+
+		<p><img (click)="onShowHide(true)" [class.mostrararmas]="mostrarArmasPVE === true" src="../assets/images/clases/warrior/armaspve.png" alt="guerreroarmas" />
+		<img (click)="onShowHide(false)" [class.mostrararmas]="mostrarArmasPVE === false" src="../assets/images/clases/warrior/armaspve.png" alt="guerreroarmas" /></p>
+
+		<p><img (click)="onShowHide11(true)" [class.mostrararmas]="mostrarArmasPVP === true" src="../assets/images/clases/warrior/armaspvp.png" alt="guerreroarmas" />
+		<img (click)="onShowHide11(false)" [class.mostrararmas]="mostrarArmasPVP === false" src="../assets/images/clases/warrior/armaspvp.png" alt="guerreroarmas" /></p>
+		<p>Un maestro de las armas de dos manos curtido en la batalla, una la movilidad y los ataques implacables para derribar a sus oponentes.</p>
+	</div>
+
+	<div id="furia" class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+	<p>En esta sección podrás encontrar las guías de guerrero furia tanto PvE como PvP, para acceder a la que usted desee solo haga click encima.</p>
+		<p><img (click)="onShowHide1(true)" [class.mostrarfuria]="mostrarFuria === true" src="../assets/images/clases/warrior/furiapve.png" alt="guerrerofuria"/>
+		<img (click)="onShowHide1(false)" [class.mostrarfuria]="mostrarFuria === false" src="../assets/images/clases/warrior/furiapve.png" alt="guerrerofuria"/></p>
+
+		<p><img (click)="onShowHide11(true)" [class.mostrararmas]="mostrarArmasPVP === true" src="../assets/images/clases/warrior/furiapvp.png" alt="guerreroarmas" />
+		<img (click)="onShowHide11(false)" [class.mostrararmas]="mostrarArmasPVP === false" src="../assets/images/clases/warrior/furiapvp.png" alt="guerreroarmas" /></p>
+	<p>Una violenta guerrera que lleva un arma en cada mano; encadena un aluvión de ataques para hacer pedazos a sus oponentes.</p>
+	</div>
+
+	<div id="proteccion" class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+	<p>En esta sección podrás encontrar las guías de guerrero protección tanto PvE como PvP, para acceder a la que usted desee solo haga click encima.</p>
+	<p><img (click)="onShowHide2(true)" [class.mostrarprote]="mostrarProte === true" src="../assets/images/clases/warrior/proteccionpve.png" alt="guerreroproteccion"/>
+	<img (click)="onShowHide2(false)" [class.mostrarprote]="mostrarProte === false" src="../assets/images/clases/warrior/proteccionpve.png" alt="guerreroproteccion"/></p>
+
+		<p><img (click)="onShowHide11(true)" [class.mostrararmas]="mostrarArmasPVP === true" src="../assets/images/clases/warrior/proteccionpvp.png" alt="guerreroarmas" />
+		<img (click)="onShowHide11(false)" [class.mostrararmas]="mostrarArmasPVP === false" src="../assets/images/clases/warrior/proteccionpvp.png" alt="guerreroarmas" /></p>
+	<p>Un firme protector que usa un escudo para protegerse a sí mismo y sus aliados.</p><br/>
+	</div>
+
+</div>
+
+<div id="guiasguerrero"  class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+
+<div *ngIf = "mostrarArmasPVE === true">
+<h3>Guerrero Armas PvE</h3>
+
+<ol>
+
+<li>Estadisticas</li>
+	<ul>
+		<li>1.1 Reforje</li>
+		<li>1.2 Gemas</li>
+		<li>1.3 Encantamientos</li>
+	</ul>
+<li>Talentos</li>
+	<ul>
+		<li>2.1 Glifos</li>
+	</ul>
+<li>Rotación</li>
+	<ul>
+		<li>3.1 Rotación Inicial</li>
+		<li>3.2 Rotación Golpe Heróico</li>
+		<li>3.3 Uso de Coldowns</li>
+	</ul>
+<li>Beneficios</li>
+	<ul>
+		<li>4.1 Buff</li>
+		<li>4.2 Debuff</li>
+		<li>4.3 Comidas, Frascos, Pergaminos</li>
+		<li>4.4 Beneficios Propios y Proc</li>
+	</ul>
+<li>Stance Dance</li>
+	<ul>
+		<li>5.1 ¿Es necesario?</li>
+	</ul>
+<li>Macros</li>
+	<ul>
+		<li>6.1 Macros Battle Stance</li>
+		<li>6.2 Macros Generales</li>
+	</ul>
+
+</ol>
+
+		<h4 id="estadisticas">1. Estadisticas</h4>
+
+		<p>Lo mas importante es el <strong>hit</strong> y la <strong>pericia</strong>, ya que sin ellos fallaremos la mayoria de ataques y por ende tampoco generaremos ira. Resumiendo asi serian nuestros stats. Hit 8% > Crítico > Pericia 27p > Maestría > Celeridad.</p>
+
+		<ul>
+		<li><p><strong>Hit:</strong> Nos permite que nuestros golpes blancos (automáticos) y amarillos (habilidades) se dirijan al objetivo y no fallemos. Con un 8% no fallaremos frente a objetivos lvl 88 o Calavera.</p></li>
+
+		<li><p><Strong>Crítico:</Strong> Nos aporta muchísimos beneficios, cuanto más crítico tengamos, más probabilidad de enfurecernos, de dejar los dot <em>(Damage of time)</em> en el objetivo...y con el talento Empalar tenemos mejorado el beneficio del crítico de nuestras habilidades más importantes, y no hay que olvidar que tenemos un beneficio pasivo del cual generamos un 25% de ira del daño hecho.</p></li>
+
+		<li><p><strong>Pericia:</strong> Una vez que, gracias al hit, nuestro golpe se dirige correctamente al objetivo...éste tiene la posibilidad de esquivar, parar o bloquear dicho ataque. Con la pericia haremos que eso no suceda. Con 27p de pericia evitamos que un Boss nos esquive por la espalda, pero para que no nos pare el golpe si pegamos de frente necesitaríamos alcanzar 56p, cifra que <strong>NO</strong> buscaremos y nos limitaremos a buscar la espalda del boss siempre que sea posible.</p></li>
+
+		<li><p><strong>Maestría:</strong> Nos aporta Golpes oportunos, quiere decir que nuestros golpes y habilidades tienen una % de hacer un golpe a melee extra.</p></li>
+
+		<li><p><strong>Celeridad:</strong> Nos aporta velocidad de ataque, no la buscaremos, de hecho, sería la primera estadística a reforjar para tener la menos posible.</p></li>
+		</ul>
+
+		<h4>1.1. Reforje</h4>
+
+		<p>Lo más importante es llegar al 8% de hit, después intentar que todas las piezas lleven crítico, y por último intentar llegar a los 27p de pericia.</p>
+
+		<p>Siguiendo el orden en la prioridad de las estadísticas que puse arriba, ya os podéis hacer una idea de las preferencias a reforjar.</p>
+
+		<p>El Haste es lo que siempre intentaremos quitar primero si o si. </p>
+
+		<p>Con la ayuda de los reforjes intentaremos llegar a la mayor cantidad de crítico posible, y 27p de pericia (si no es posible llegar a 27 dejenlo en 23-25 que tampoco es tan malo).</p>
+
+		<p>Por último recuerdo nuestro stats deberían quedar algo asi:</p>
+		<p>Hit 8 % o aproximadamente</p>
+		<p>Pericia 23-27 </p>
+		<p>Crítico arriba de 15 o 16% con nuestro buff de warrior estaría bien (y muy bueno seria +20%)</p>
+		<p>Maestría con arriba de 10%</p>
+		<p>Celeridad, bueno, este stats el unico que no reforjamos nunca solo le sacamos toda la celeridad para reforjar a critico o a lo qe nos haga falta para llegar a los propuestos caps ya mencionados.</p>
+
+		<h4>1.2.Gemas</h4>
+
+		<p>En general respetaremos las bonificaciones, ya que el crítico, como la maestría, nos mejora bastante, excepto si el bonus es de Haste (celeridad), que pondremos roja pura de Fuerza aunque no respete el bonus.</p>
+
+		<ol>
+			<li><p><strong>Hueco Rojo:</strong> Rubí inferno llamativo <a href="http://es.wowhead.com/item=52206/" target="_blank">Click para ver en wowhead</a></p></li>
+			<li><p><strong>Hueco Amarillo:</strong> Topacio de ascuas con inscripciones <a href="http://es.wowhead.com/item=52222" target="_blank">Click para ver en wowhead</a></p></li>
+			<li><p><strong>Hueco Azul:</strong> Ojo de demonio con grabados <a href="http://es.wowhead.com/item=52213" target="_blank">Click para ver en wowhead</a></p></li>
+		</ol>
+
+		<h4>1.3. Encantamientos</h4>
+
+		<ul>
+			<li><p><strong>Cabeza:</strong> <a href="http://es.wowhead.com/item=62368" target="_blank">Click para ver en wowhead</a> para la Horda y <a href="http://es.wowhead.com/item=62422" target="_blank">Click para ver en wowhead</a> para la Alianza.</p></li>
+			<li><p><strong>Hombros:</strong> <a href="http://es.wowhead.com/item=62345" target="_blank">Click para ver en wowhead</a></p></li>
+			<li><p><strong>Capa:</strong> <a href="http://es.wowhead.com/item=52777" target="_blank">Click para ver en wowhead</a></p></li>
+			<li><p><strong>Pecho:</strong> <a href="http://es.wowhead.com/item=52779" target="_blank">Click para ver en wowhead</a></p></li>
+			<li><p><strong>Brazales:</strong> <a href="http://es.wowhead.com/item=68785" target="_blank">Click para ver en wowhead</a></p></li>
+			<li><p><strong>Manos:</strong> <a href="http://es.wowhead.com/item=52783" target="_blank">Click para ver en wowhead</a></p></li>
+			<li><p><strong>Cintura:</strong> <a href="http://es.wowhead.com/item=55054" target="_blank">Click para ver en wowhead</a></p></li>
+			<li><p><strong>Piernas:</strong> <a href="http://es.wowhead.com/item=56550" target="_blank">Click para ver en wowhead</a></p></li>
+			<li><p><strong>Botas:</strong> <a href="http://es.wowhead.com/item=52782"  target="_blank">Click para ver en wowhead</a></p></li>
+			<li><p><strong>Arma:</strong> Encantar arma: <a href="http://es.wowhead.com/item=52776" target="_blank">Click para ver en wowhead</a></p></li>
+		</ul>
+		
+		<h4>2. Talentos</h4>
+
+		<p>Bueno nos ahorraremos un poco aqui el trabajo de escritura y nos iremos al hecho de las imágenes.</p>
+
+		<a href="http://freecode.hu/wowtal/eng/?WR#3112030312021231221103221.36-!-1,-1,-1,-1,-1,-1,-1,-1,-1" target="_blank">Talentos</a>
+
+		<p>Estos talentos son los que utilizaremos por 2 razones.</p>
+
+		<ol>
+			<li><p>La primera razón por la cual utilizamos estos talentos es porque sirven demasiado para las instances y bandas.</p></li>
+			<li><p>La segunda razón es por que aquí con estos talentos nos podemos concentrar en hacer un DPS bestial, pero para hacer tal dps debemos aprender 1 rotación un poco difícil pero con el tiempo se acostumbrarán (La cual explicaré en el punto 3.)</p></li>
+		</ol>
+
+		<h4>2.1. Glifos</h4>
+
+		<p><strong>Primordiales:</strong> Glifo de Abrumar , Glifo de Golpe mortal y Glifo de Embate . También podrían usar este glifo que ayuda demasiado en bosses que necesitamos mucho AoE y poco coldown Glifo de Filotormenta.</p>
+
+		<p><strong>Superiores:</strong> Glifo de Machaque colosal , Glifo de Golpes de barrido , Glifo de Lanzamiento heróico o Glifo de Rajar para AoE.</p>
+
+		<p><strong>Menores:</strong> Glifo de Batalla , Glifo de Ordenar si no hay sacerdote, Glifo de Ira rabiosa. Un Opcional, para ayudar en mazmorras si hay poca supervivencia Glifo de Grito intimidador.</p>
+
+		<a href="http://i.imgur.com/K0ryK9F.jpg" target="_blank">Imágen de los glifos</a>
+
+		<h4>3.Rotacion</h4>
+
+		<p>Más que rotación son prioridades, nuestras prioridades a la hora de usar hechizos serían: Desgarrar en el objetivo > Machaque colosal > Golpe Mortal > Abrumar > Embate</p>
+
+		<p>El machaque no lo usaremos si el objetivo ya tiene el debuff del Machaque colosal.</p>
+
+		<p>Usaremos Ira rabiosa prácticamente a CD (CoolDown o Enfriamiento), porque, gracias al glifo, nos dará 5p de ira instantanéa además de ira extra al recibir dañoo.</p>
+
+		<h4>3.1. Rotacion Inicial</h4>
+
+		<p>Al principio cambian un poco las prioridades, puesto que necesitamos stackear algunos buffos para hacer el mayor daño posible cuanto antes. Aquí, depende del gusto o sentimiento del guerrero empezar de una forma u otra. También depende del encuentro.</p>
+
+		<ol>
+			<li><p>Desgarrar > Golpe Mortal > Machaque colosal > Abrumar > Golpe mortal > Embate >...</p></li>
+			<li><p>Desgarrar > Actitud Rabiosa > Machaque colosal > Golpe Mortal > Embate > Actitud de Batalla > Abrumar...</p></li>
+		</ol>
+
+		<p>¿Porqué se prioriza Golpe mortal sobre Machaque colosal en el Opener? Pues porque Golpe Mortal stackea el Buffo Corderos al matadero, que nos aumenta el daño un 10% de nuestras 4 habilidades principales, hasta 3 stack (30% al final), y es importante stackearlo lo antes posible. Según el warrior, hay quién prefiere incluso priorizarlo antes del desgarrar, pero no podemos olvidar que el desgarrar buffa al resto de la raid. Si hay alguien más que ponga el buffo si podríamos priorizar Golpe mortal por Desgarrar en el Opener.</p>
+
+		<p>El Machaque Colosal es importante en el Opener, ya no solo porque reduce un 100% la armadura, sino que, gracias al Glifo, nos ayudará a poner cuánto antes la reducción de armadura. Si se tiene el Glifo de Lanzamiento heroico pondremos los 2 primeros stack (de 3 totales) del hender armadura muy rápido.</p>
+
+		<h4>3.2. Rotación Golpe Heroico</h4>
+
+		<p>El uso de Golpe heroico va a depender mucho del boss al que nos enfrentemos, pues generaremos m?ís o menos ira, dependiendo del da??o que recibamos y hagamos.</p>
+
+		<p>Usaremos Golpe heroico cuando:</p>
+
+		<p>Calma mortal activo</p>
+		<p>Trance de batalla activo</p>
+		<p>Incitar activo y +50p de ira (+40p si Ira interna activo)</p>
+		<p>+60/70 de ira con Machaque colosal en el objetivo (+40p si Ira interna activo)</p>
+
+		<p>Los puntos de ira son aproximados, si es un boss donde no generamos casi de daño tendremos que jugar con la ira un pelín más alta, pero por el contrario, si es un boss o fase donde recibimos mucho daño, podremos jugar con la ira bastante más baja.</p>
+
+		<h4>3.3. Uso de Coldowns</h4>
+
+		<p>Nuestros CD's son Calma mortal, con un cd (tiempo de reutilización) de 2min, y Temeridad con un cd de 5min.</p>
+
+		<p>Tenemos que intentar usar los cd's los antes posible, porque así antes lo volveremos a tener, y posiblemente más veces lo usemos en combate. Claro que todo ello depende de los bosses. Si el boss dura menos de 5min intentaremos guardar Temeridad para el -20% de vida del boss.</p>
+
+		<p>Si un boss dura, por ejemplo, 7 minutos, usaremos Calma mortal en el minuto 00:5 (aproximadamente), 2:05, 4:05 y ...no en el 6:05, aquí lo guardaríamos para la fase -20% de vida del boss, pues le sacaríamos más provecho que al minuto 6.</p>
+
+		<p>Una lástima que Calma mortal es incompatible con Temeridad y también con Ira interna, por lo que Calma mortal no podrá ir acompañado de dichas habilidades. Temeridad si debería ir acompañado de Ira interna si la tenemos en cd.</p>
+
+		<p>Durante el Calma mortal no usáis habilidades que os dan ira, es decir, ni Grito de batalla/orden ni Ira rabiosa, no porque no se pueda, es que no vale la pena, no necesitáis esa ira extra puesto que durante el Calma mortal las habilidades no cuestan ira y al final acabas topeando la ira, habilidad que te tires ahí para generar ira es habilidad tirada a la basura.</p>
+
+		<p>Aprovechar las Raciales o Profesiones si son habilidades como Furia, Sangre de vida, Rabiar, etc. En mi caso siempre uso la racial de orco junto al Calma mortal pues tiene 2min de cd.</p>
+
+		<p>Tener en cuenta que algunos trinket necesitan de stackear varias cargar para que su uso sea el más potente.</p>
+
+		<h4>4. Beneficios</h4>
+
+		<p>¿Qué buffos o debuffos aportamos a la raid? ¿Qué proc debo de tener en cuenta a lo largo del combate?</p>
+
+		<p>Los beneficios que podemos aportar a la raid son:</p>
+
+		<h4>4.1. Buff</h4>
+
+		<ul>
+
+			<li><p><strong>Grito de Batalla:</strong> Que aumentará la fuerza/agilidad de toda la raid.</p></li>
+
+			<li><p><strong>Grito de Orden:</strong> Aumenta el Aguante de la raid, importante si no tenemos Sacerdote (también lo pone el Diablillo del brujo).</p></li>
+
+			<li><p>4% de daño físico aumentado mediante un debuff (sangrado).</p></li>
+
+			<li><p>30% de daño de sangrados aumentado mediante un debuff (sangrado).</p></li>
+
+		</ul>
+
+		<h4>4.2 Debuff</h4>
+
+		<ul>
+
+			<li><p><strong>Grito desmoralizador:</strong> Disminuye un 10% el daño físico realizado por el enemigo. Lo pondrán los tankes.</p></li>
+
+			<li><p><strong>Atronar:</strong> Disminuye un 20% la velocidad de ataque del enemigo. Lo pondrán los tankes.</p></li>
+
+			<li><p><strong>Desgarrar:</strong> DoT que siempre tiene que estar activo en el objetivo, a no ser que vaya a durarte 2 o 3 golpes.</p></li>
+
+			<li><p><strong>Heridas profundas:</strong> DoT que se Activa con los críticos.</p></li>
+
+			<li><p><strong>Hender Armadura:</strong> Importane Stackear 3 veces, mediante Lanzamiento heroico y Machaque colosal con sus respectivos glifos o mediante la habilidad Hender armadura. Hay otras clases que también lo ponen.</p></li>
+
+			<li><p><strong>Machaque colosal:</strong> Importante verlo bien visible. Lo pondrá la propia habilidad con el mismo nombre.</p></li>
+
+			<li><p><strong>Lanzamiento Destrozador:</strong> Reduce un 20% la armadura al objetivo durante 10s, se aprovechará toda la raid. 1'5s de casteo, 5min de cd.</p></li>
+
+		</ul>
+
+		<h4>4.3. Comidas, Frascos, Pergaminos</h4>
+
+		<ul>
+			<li><p><strong>Frascos:</strong> Frasco de Fuerza titánica -> Este frasco dura 1 hora y aumenta en 300 nuestra fuerza <em>(Persiste después de la muerte).</em></p></li>
+			<li><p><strong>Exilir:</strong> Poción de sangre de golem -> Esta poción es increiblemente importante si queremos un burst increiblemente alto para 1 boss en el cual dependa mucho el daño.</p></li>
+			<li><p><strong>Comida:</strong> Crocolisco a la cerveza -> Esta comida, después de haber comido 10 segundos aumenta en 90 puntos nuestro aguante y 90 puntos nuestra fuerza dura 30 min.</p></li>
+			<li><p><strong>Pergamino:</strong> Pergamino de fuerza IX -> Este pergamino nos da 100 de fuerza durante 30 min.</p></li>
+		</ul>
+
+		<h4>4.4. Beneficios Propios y Proc</h4>
+
+		<ul>
+			<li><p><strong>Gusto por la sangre:</strong> Se activa con cada Tick de Desgarrar, y nos permitirá usar Abrumar. Dura 9s y solo se activa 1 vez cada 5s. Importante tenerlo visible si estamos cambiando objetivos y estamos parando de golpear en esas transiciones.</p></li>
+
+			<li><p><strong>Golpes de Barrido:</strong> Tiene un cd de 1min. Tus ataques cuerpo a cuerpo golpean a 1 objetivo cercano adicional, dura 10s. Evidentemente hay que usarlo cuando haya 2 objetivos o más y no tengamos Filotormenta activo.</p></li>
+
+			<li><p><strong>Corderos al matadero:</strong> El buffo más importante a tener en cuenta, se activa con el Golpe Mortal, y aumentará el daño de Golpe mortal, Abrumar, Embate y Ejecutar un 10% por stack, hasta 3 stack, dura 15s. Es importante tenerlo bien visible para no perder el beneficio y no tener que volver a empezar desde 0.</p></li>
+
+			<li><p><strong>Enfurecer:</strong> Nuestros Golpe mortal críticos nos enfurecerán, aumentando todo nuestro daño un 10% durante 12s.</p></li>
+
+			<li><p><strong>Verdugo:</strong> Nos aumenta un 5% la celeridad cuerpo a cuerpo por stack, hasta 5 stack. Se activa con Ejecutar. Importante también tenerlo bien visible para en la fase final no perder el 25% de celeridad y no tener que volver a empezar de 0. Dura solo 10s, se va más rápido que Corderos al matadero.</p></li>
+
+			<li><p><strong>Trance de batalla:</strong> Hace que nuestro siguiente golpe que cueste más de 5p de ira sea gratuito. Golpe mortal tiene un 15% de probabilidad de activar dicho buffo. Se intentará gastar, en la medida de lo posible, en Golpe heroico (Rajar en AoE), pues es la habilidad que más ira cuesta (si te regalan un coche te vas al más caro, ¿no? pues lo mismo xD). Abrumar, por su coste, no consume este beneficio.</p></li>
+
+			<li><p><strong>Incitar:</strong> Nuestros Golpe heroico críticos activan este beneficio, que hace que tengamos un 100% de probabilidad (3/3) de que el siguiente Golpe heroico sea crítico. Por supuesto, los Golpes críticos realizados gracias a Incitar no volverán a activar dicho efecto, sino serían todos los Golpe heroico críticos.</p></li>
+
+			<li><p><strong>Ira interna:</strong> 30s de cd, 15s de duración. Reduce el cd de Golpe heroico y Rajar 1'5s, por lo que se quedan en 1'5s de cd. Importante usarlo siempre que sepamos que vamos a sacarle provecho, es decir, tengamos una ira media-alta o sepamos que vamos a recibir ira y vamos a poder usar, así, varios Golpe heroico.</p></li>
+		</ul>
+
+		<h4>5. Stance Dance</h4>
+
+		<p>El Stance dance es una forma de jugar, aprovechando los beneficios que nos aporta la Actitud Rabiosa.</p>
+
+		<p>Sabemos que hay habilidades que requieren que estemos en Actitud de batalla para usarlos, pero otros no tienen ese requerimiento.</p>
+
+		<p>También sabemos que la Actitud Rabiosa nos aporta un 5% de daño extra respecto a la Actitud de batalla.</p>
+
+		<p>También sabemos que el cambio de actitud no comparte GCD con el resto de habilidades, y que tiene un GCD propio de 1s.</p>
+
+		<p>Dicho esto, para realizar el Stance Dance necesitaremos de una serie de macros para que, al usar una habilidad que requiera estar en Actitud de batalla, pase a dicha Actitud automáticamente si estamos en Actitud rabiosa, y viceversa.</p>
+
+		<p>Para que esto funcione bien, debemos tener los 2p de talento de Maestría táctica, para poder mantener la ira aun cambiando actitud.</p>
+
+		<h4>5.1. ¿Es necesario?</h4>
+
+
+		<p>Realmente no, se sacará aproximadamente un 3-6% de daño, depende del boss entre otras cosas.</p>
+
+		<p>Pero es un arma de doble filo, pues seguramente perderemos dps si no tenemos mucha práctica con el warrior armas, si nuestra latencia es superior a 250-300ms, si nuestros fps son bajos...</p>
+
+		<p>Por supuesto hay que ser decisivo, los cambios de actitud tienen 1s de GCD, si hacemos un cambio de actitud para hacer una habilidad y luego no podemos usarla por X motivo, y tenemos que volver a cambiar de actitud para usar otra habilidad que si podemos usar...estaremos perdiendo dps.</p>
+
+		<h4>6. Macros</h4>
+
+		<p>Las macros son atajos que nos permiten tener varias habilidades, generalmente que no compartan GCD (Global cooldown o tiempo de reutilización global), en el mismo botín, lo que nos ahorra tiempo y espacio.</p>
+
+
+		<h4>6.1. Macros Battle Stance</h4>
+
+		
+
+		<p><strong>Cambiar de Actitud Berseker a Actitud de batalla para tirar abrumar, Siguiendo en cuenta la rotación 2 (Indice 3).</strong></p>
+
+		<em>
+		<p>#showtooltip Actitud de Batalla/Battle Stance</p>
+		<p>/cast Actitud de batalla</p>
+		<p>/cast Abrumar</p>
+		</em>
+
+		<p><strong>Cambiar de Actitud de batalla a Actitud rabiosa utilizamos este.</strong></p>
+
+		<em>
+		<p>#showtooltip Actitud Rabiosa</p>
+		<p>/cast Actitud Rabiosa</p>
+		<p>/cast Golpe Mortal</p>
+		</em>
+
+		<h4>6.2. Macros Generales</h4>
+
+		<em>
+		<p>#showtooltip Actitud defensiva</p>
+		<p>/cast Actitud Defensiva</p>
+		<p>/equip (Arma de una mano)</p>
+		<p>/equip (Escudo)</p>
+		<p>/cast Muro de escudo</p>
+		</em>
+
+		<p>Para volver a actitud de batalla usamos este.</p>
+
+		<em>
+		<p>#showtooltip Actitud de batalla</p>
+		<p>/cast actitud de batalla</p>
+		<p>/equip (Su arma de 2 manos)</p>
+		</em>
+
+		<p>Para usar nuestro BURST utilizamos este.</p>
+
+		<em>
+		<p>#showtooltip actitud rabiosa</p>
+		<p>/cast Actitud rabiosa</p>
+		<p>/use (Trinket)</p>
+		<p>/use Temeridad</p>
+		<p>/use Racial (En caso de ser orco)</p>
+		</em>
+
+
+		<p>Para curarnos usaremos este.</p>
+
+		<em>
+		<p>#showtooltip Regeneracion Iracunda</p>
+		<p>/cast Ira Rabiosa</p>
+		<p>/cast Barrido de Convocacion</p>
+		<p>/cast Regeneracion Iracunda</p>
+		</em>
+		<p>Para este macro es mejor si qieren usar el macro de escudo + este nos daria 1 increible resistencia en la pelea o incluso podemos tankear 1 boss hasta que revivan a nuestro tanke.</p>
+</div>
+
+<div *ngIf = "mostrarArmasPVP === true">
+<h3>Guerrero Armas PvP</h3>
+
+<ol>
+<li>Estadísticas</li>
+<li>Gemas</li>
+<li>Glifos</li>
+<li>Talentos</li>
+<li>Macros</li>
+</ol>
+
+	<h4>1. Estadísticas</h4>
+
+	<ol>
+	<li><p>Fuerza</p></li>
+	<li><p>Crítico</p></li>
+	<li><p>Maestría</p></li>
+	<li><p>Celeridad</p></li>
+	</ol>
+
+	<p>Se necesita capear el índice de golpe (para que no nos esquiven golpes) <strong>5%</strong> serían suficientes. También se debería capear la pericia (para que no nos paren, o nos paren lo menos posible los golpes) <strong> entre 4 y 5 también </strong>, este valor dependerá de contra quien estés peleando. Por lo general un pícaro o druida feral siempre van a esquivar mas que un paladín, guerrero, dk...</p>
+
+	<h4>2. Gemas</h4>
+
+	<ol>
+	<li><p><strong> Gema meta:</strong> <a href="http://es.wowhead.com/item=68779/diamante-de-espiritu-de-las-sombras-resonante" target="_blank"> Diamante de espíritu de las Sombras resonante.</a></p></li>
+	<li><p><strong>Gema roja: </strong><a href="http://es.wowhead.com/item=71883/granate-de-la-reina-llamativo" target="_blank">Granate de la reina llamativo</a> o bien <a href="http://es.wowhead.com/item=71861/coral-de-lava-rutilante" target="_blank">Coral de lava rutilante</a></p></li>
+	<li><p><strong>Gema amarilla: </strong><a href="http://es.wowhead.com/item=71861/coral-de-lava-rutilante" target="_blank">Coral de lava rutilante</a> o bien <a href="http://es.wowhead.com/item=71883/granate-de-la-reina-llamativo" target="_blank">Granate de la reina llamativo</a></p></li>
+	<li><p><strong>Gema azul: </strong><a href="http://es.wowhead.com/item=71866/espinela-de-sombras-con-grabados" target="_blank">Espinela de sombras con grabados</a> o bien <a href="http://es.wowhead.com/item=71883/granate-de-la-reina-llamativo" target="_blank">Granate de la reina llamativo</a></p></li>
+</ol>
+
+<h4>3. Glifos</h4>
+
+<p><strong>Glifos primordiales:</strong></p>
+<ul>
+<li><p>Glifo de Abrumar.</p></li>
+<li><p>Glifo de Filotormenta.</p></li>
+<li><p>Glifo de Golpe mortal.</p></li>
+</ul>
+<p><strong>Glifos sublimes:</strong></p>
+<ul>
+<li><p>Glifo de carga rápida.</p></li>
+<li><p>Glifo de Machaque colosal.</p></li>
+<li><p>Glifo de Aullido perforador.</p></li>
+</ul>
+<p><strong>Glifos menores:</strong></p>
+<ul>
+<li><p>Glifo de Ira rabiosa.</p></li>
+<li><p>Glifo de Batalla.</p></li>
+<li><p>Glifo de Grito intimidante.</p></li>
+</ul>
+
+<h4>4. Talentos</h4>
+
+<p>Para ver los talentos presione el siguiente enlace <a href="http://freecode.hu/wowtal/eng/?WR#32202303022012312211302.3-1.14-3.19-!-1,-1,-1,-1,-1,-1,-1,-1,-1" target="_blank">Talentos</a></p>
+
+<h4>5. Macros</h4>
+
+<p><strong>Burst</strong>
+
+<p>/cast Temeridad</p>
+<p>/usar (abalorio de fuerza aquí)</p>
+<p>/cast (si tienes hervo, ponlo aquí)</p>
+<p>/cast (racial si eres orco)</p>
+
+<p><strong>Cargar</strong>
+
+<p>#showtooltip Cargar</p>
+<p>/stopcasting</p>
+<p>/cancelaura Filotormenta</p>
+<p>/cast Cargar(Actitud de batalla)</p>
+
+<p><strong>Reflejar Hechizo</strong></p>
+
+<p>#showtooltip Reflejo de hechizos(Actitud de batalla y defensiva)</p>
+<p>/equipar (arma de una mano)</p>
+<p>/equipar (escudo)</p>
+<p>/cast Reflejo de hechizos(Actitud de batalla y defensiva)</p>
+
+<p><strong>Berrido + Curación</strong></p>
+
+<p>#showtooltip Berrido de convocación</p>
+<p>/cancelaura Filotormenta</p>
+<p>/cast Berrido de convocación</p>
+<p>/cast Ira rabiosa</p>
+<p>/cast Regeneración iracunda</p>
+<p>/use Piedra de salud</p>
+
+<p><strong>Ejecutar + Golpe Heróico</strong></p>
+
+<p>#showtooltip</p>
+<p>/cancelaura Filotormenta</p>
+<p>/castsequence reset=2 Ejecutar(Actitud de batalla y rabiosa), Golpe heroico </p>
+
+<p><strong>Defensivos UP!</strong></p>
+
+<p>#showtooltip Actitud Defensiva</p>
+<p>/cast Actitud Defensiva</p>
+<p>/cancelaura Filotormenta</p>
+<p>/equipar (arma de una mano)</p>
+<p>/equipar (escudo)</p>
+<p>/cast Muro de escudo</p>
+<p>/cast Bloquear con escudo(Actitud defensiva)</p>
+
+<p><strong>Actitud de Batalla + Armas 2M</strong></p>
+
+<p>#showtooltip Actitud de batalla</p>
+<p>/cancelaura Filotormenta</p>
+<p>/lanzar Actitud de batalla</p>
+<p>/equipar (arma de 2H)</p>
+
+</div>
+
+<div *ngIf = "mostrarFuria === true">
+<h3>GUERRERO FURIA</h3>
+</div>
+
+<div *ngIf = "mostrarProte === true">
+<h3>GUERRERO PROTECCIÓN</h3>
+</div>
+
+</div>
+
+
+
+</div>

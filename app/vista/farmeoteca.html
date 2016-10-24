@@ -1,0 +1,89 @@
+<div id="generalFarmeoteca" class="container">
+
+<div class="row">
+<div class="intro col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+<img src="../assets/images/farmeoteca/farmeoteca.png" alt="farmeoteca"/>
+</div>
+
+</div>
+
+<div id="cajontextos" class="row">
+
+
+
+<h2>Introduzca el elemento que desea buscar como se indica en los ejemplos.</h2><p>Ejemplos: obsidium, elementium, cuero salvaje, colatigo </p>
+
+<form #buscaObjeto="ngForm" (ngSubmit)= "onSubmit()">
+
+<!--<input type="text" #nombreobjeto="ngForm" ngControl="nombreobjeto" [(ngModel)]="Objeto.nombreobjeto" />
+
+<input class="buscarboton" type="submit" value="Buscar" />-->
+
+
+
+    <div id="textos" class="input-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <input type="text"#nombreobjeto="ngForm" ngControl="nombreobjeto" [(ngModel)]="Objeto.nombreobjeto" required class="form-control" placeholder="Buscar elemento...">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> Buscar</button>
+      </span>
+</div>
+
+</form>
+
+<section class="row">
+<br/>
+
+<hr id="hr">
+
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="mostrando" *ngIf = "MostrarObsidium === true">
+  <h2 id="nombreObjeto"  >Objeto buscado: Mena de Obsidium</h2>
+  <h3 id="zonaobjeto">Zona del Objeto: </h3> <p>Vashj'ir</p>
+  <h3 id="lvlobjeto">Nivel recomendado de la zona: </h3><p>Zona recomendada para niveles mayor a 80</p>
+  <h3 id="ruta">Ruta de farmeo recomendada:</h3>
+  <p><img id=imgobjeto src="./assets/images/farmeoteca/obsidium.jpg" alt="Menas de cobalto" width="500" height="auto"></p>
+  </div>
+
+
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="mostrando" *ngIf = "MostrarElementium === true">
+  <h2 id="nombreObjeto"  >Objeto buscado: Mena de Elementium</h2>
+  <h3 id="zonaobjeto">Zona del Objeto: </h3> <p>Uldum</p>
+  <h3 id="lvlobjeto">Nivel recomendado de la zona: </h3><p>Zona recomendada para niveles mayor a 82</p>
+  <h3 id="ruta">Ruta de farmeo recomendada:</h3>
+  <p><img id=imgobjeto src="./assets/images/farmeoteca/elementium.jpg" alt="Menas de Elementium" width="500" height="auto"></p>
+  </div>
+
+
+
+ <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="mostrando" *ngIf = "MostrarCueroSalvaje === true">
+  <h2 id="nombreObjeto"  >Objeto buscado: Cuero Salvaje</h2>
+  <h3 id="zonaobjeto">Zona del Objeto: </h3> <p>Tierras Altas Crepusculares</p>
+  <h3 id="lvlobjeto">Nivel recomendado de la zona: </h3><p>Zona recomendada para niveles mayor a 83</p>
+  <h3 id="ruta">Ruta de farmeo recomendada:</h3>
+  <p><img  id=imgobjeto src="./assets/images/farmeoteca/cuerosalvaje.jpg" alt="Cuero Salvaje" width="500" height="auto"></p>
+  </div>
+
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="mostrando" *ngIf = "MostrarColatigo === true">
+  <h2 id="nombreObjeto"  >Objeto buscado: Colátigo</h2>
+  <h3 id="zonaobjeto">Zona del Objeto: </h3> <p>Uldum</p>
+  <h3 id="lvlobjeto">Nivel recomendado de la zona: </h3><p>Zona recomendada para niveles mayor 82</p>
+  <h3 id="ruta">Ruta de farmeo recomendada:</h3>
+  <p><img id=imgobjeto src="./assets/images/farmeoteca/colatigo.jpg" alt="Colátigo" width="500" height="auto"></p>
+  </div>
+
+
+
+
+
+
+
+</section>
+
+<br/>
+
+
+
+
+</div>
+</div>

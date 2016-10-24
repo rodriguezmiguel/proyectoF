@@ -1,0 +1,119 @@
+    <div  class="container-fluid">
+
+      <section class="main row">
+
+        <nav id="menu" class="navbar navbar col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+
+
+           <div class="container">
+
+           
+            <div id="barrasresponsive">
+                <button  type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand active" [routerLink]="['Principal']">Inicio</a>
+            </div>
+
+            <div  class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul  class="nav navbar-nav">
+                  <li id="fijo"><a [routerLink]="['Apply']">Applys<span class="sr-only">(current)</span></a></li> <!--Formulario de ingreso a la guild-->
+
+                
+
+                  <li class="dropdown">
+                    <a id="fijo" href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Guías<span class="caret" ></span></a>
+
+                    <ul class="dropdown-menu">
+                      <li id="fijo"><a [routerLink]="['Warrior']"><img src="./assets/images/iconos/warrior.png" width="20px" height="20px" /> Guerrero</a></li>
+                      <li><a [routerLink]="['Paladin']"><img src="./assets/images/iconos/paladin.png" width="20px" height="20px" /> Paladín</a></li>
+                      <li><a [routerLink]="['Dk']"><img src="./assets/images/iconos/dk.png" width="20px" height="20px" /> Caballero de la Muerte</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#"><img src="./assets/images/iconos/hunter.png" width="20px" height="20px" /> Cazador</a>
+
+                      </li>
+                      <li><a href="#"><img src="./assets/images/iconos/chaman.png" width="20px" height="20px" /> Chamán</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#"><img src="./assets/images/iconos/druida.png" width="20px" height="20px" /> Druida</a></li>
+                      <li><a href="#"><img src="./assets/images/iconos/picaro.png" width="20px" height="20px" /> Pícaro</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#"><img src="./assets/images/iconos/sacer.png" width="20px" height="20px" /> Sacerdote</a></li>
+                      <li><a href="#"><img src="./assets/images/iconos/brujo.png" width="20px" height="20px" /> Brujo</a></li>
+                      <li><a href="#"><img src="./assets/images/iconos/mago.png" width="20px" height="20px" /> Mago</a></li>
+
+                      </ul>
+                  </li>
+
+                  <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Guías de Profesiones <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a [routerLink]="['Herboristeria']"><img src="./assets/images/iconos/herboristeria.png" width="20px" height="20px" /> Herboristería</a></li>
+                  <li><a [routerLink]="['Mineria']"><img src="./assets/images/iconos/mineria.png" width="20px" height="20px" /> Minería</a></li>
+                  <li><a href="#"><img src="./assets/images/iconos/desuello.png" width="20px" height="20px" /> Desuello</a></li>
+                  <li><a href="#"><img src="./assets/images/iconos/alquimia.png" width="20px" height="20px" /> Alquímia</a></li>
+                  <li><a href="#"><img src="./assets/images/iconos/peleteria.png" width="20px" height="20px" /> Peletería</a></li>
+                  <li><a href="#"><img src="./assets/images/iconos/encantamiento.png" width="20px" height="20px" /> Encantamiento</a></li>
+                  <li><a href="#"><img src="./assets/images/iconos/herreria.png" width="20px" height="20px" /> Herrería</a></li>
+                  <li><a href="#"><img src="./assets/images/iconos/ingenieria.png" width="20px" height="20px" /> Ingeniería</a></li>
+                  <li><a href="#"><img src="./assets/images/iconos/inscripcion.png" width="20px" height="20px" /> Inscripción</a></li>
+                  <li><a href="#"><img src="./assets/images/iconos/joyeria.png" width="20px" height="20px" /> Joyería</a></li>
+                  <li><a href="#"><img src="./assets/images/iconos/sastreria.png" width="20px" height="20px" /> Sastrería</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#"><img src="./assets/images/iconos/pesca.png" width="20px" height="20px" /> Pesca</a></li>
+                  <li><a href="#"><img src="./assets/images/iconos/cocina.png" width="20px" height="20px" /> Cocina</a></li>
+                  <li><a [routerLink]="['Arqueologia']"><img src="./assets/images/iconos/arqueologia.png" width="20px" height="20px" /> Arqueología</a></li>
+                  <li><a href="#"><img src="./assets/images/iconos/primerosauxilios.png" width="20px" height="20px" /> Primeros Auxilios</a></li>
+                </ul>
+                  </li>
+
+                  <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Guías de Mazmorras <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#"><img src="./assets/images/iconos/classic.png" width="20px" height="20px" /> Mazmorras del "WOW CLASSIC"</a></li>
+                  <li><a href="#"><img src="./assets/images/iconos/burning.png" width="20px" height="20px" /> Mazmorras de "Burning Crusade"</a></li>
+                  <li><a href="#"><img src="./assets/images/iconos/lich.png" width="20px" height="20px" /> Mazmorras de "Wrath of the Lich King"</a></li>
+                  <li><a href="#"><img src="./assets/images/iconos/cata.png" width="20px" height="20px" /> Mazmorras de "Cataclysm"</a></li>
+                </ul>
+                  </li>
+
+                  <li><a [routerLink]="['Farmeoteca']">Farmeoteca</a></li>
+                  <li><a [routerLink]="['Usuarios']">Control de usuarios</a></li>
+                  <li><a [routerLink]="['Eventos']">Calendario</a></li>
+
+
+                </ul>
+
+
+
+
+
+
+                </div>
+
+            </div>
+      
+        </nav>
+
+      </section>
+
+
+
+      </div>
+
+
+
+
+
+
+
+      <router-outlet></router-outlet>
+
+
+
+<br><br><br>
+
+<footer></footer>

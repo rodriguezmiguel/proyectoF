@@ -1,0 +1,28 @@
+<div id="generalMostrar" class="container">
+
+<div id="contenidomostrado">
+
+
+   <h2>Datos De Todos Los Miembros Introducidos</h2>
+
+
+   <button  id="btn1" (click)="onShowHide(true)" [class.showingData1]="mostrarUsuarios === true">Mostrar lista de miembros</button>
+   <button  id="btn2" (click)="onShowHide(false)" [class.showingData1]="mostrarUsuarios === false">Ocultar lista de miembros</button>
+
+   <div id="mostrando" *ngIf = "mostrarUsuarios === true"  >
+      <ul *ngFor="#usuario of usuarios">
+      <li><p><strong>Personaje principal: </strong>{{usuario.personajeusuario}}</p></li>
+      <li><p><strong>Clase del personaje principal: </strong>{{usuario.claseusuario}} </p></li>
+      <li><p><strong>Rama principal y secundaria del personaje: </strong> {{usuario.ramasusuario}}</p></li>
+      <li><p><strong>Profesiones que tiene el personaje principal: </strong>{{usuario.profesionesusuario}}</p> </li>
+      <li><p><strong>Alters dentro de la guild: </strong>{{usuario.altersusuario}} </p></li>
+      <br/>
+
+      </ul>
+   </div>
+
+
+
+   </div>
+
+   </div>

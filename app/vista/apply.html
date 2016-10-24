@@ -1,0 +1,111 @@
+<div id="generalApply"  class="container">
+
+
+
+ 	<div class="main row">
+
+    <div class="intro hidden-xs col-sm-12 col-md-12 col-lg-12">
+      <img src="../assets/images/applys.png" alt="apply"/>
+    </div>
+
+    <div class="intro col-xs-12 col-sm-12 col-md-12 hidden-lg" style="margin-top: 20%">
+      <img src="../assets/images/applys.png" alt="apply"/>
+    </div>
+
+    </div>
+
+
+    <div>
+
+   <form id="formulario">
+
+   <fieldset form="formulario">
+
+   <legend>Datos Personales</legend>
+
+   <p><strong>- Nombre:</strong>  <input type="text" name="nombre" autofocus required /></p>
+   <p><strong>- Edad:</strong>  <input type="number" name="edad" required /></p> 
+   <p><strong>- Profesión:</strong>  <input type="text" name="profesion" /></p>
+   <p><strong>- País:</strong>  <input type="text" name="pais" required /></p>
+
+   </fieldset>
+
+
+   <fieldset form="formulario">
+
+   <legend>Personaje</legend>
+
+   <p><strong>- Nombre del Pj:</strong>  <input type="text" name="nombrepj" required/></p>
+   <p><strong>- Raza:</strong> (Selecciona uno de la lista)  <select required>
+   <option class="raza" value="1" autofocus >Humano/a</option>
+   <option class="raza" value="2">Elfo/a de la noche</option>
+   <option class="raza" value="3">Draenei</option>
+   <option class="raza" value="4">Huargen</option>
+   <option class="raza" value="5">Enano/a</option>
+   <option class="raza" value="6">Gnomo/a</option>
+  </select></p>
+
+  <p><strong>Clase y Rama Principal y secundaria:</strong></p>
+
+  <p><strong>- Clase:</strong></p>
+  <p><input type="radio" class="clasemain" name="clasemain" value="guerrero" checked>Guerrero
+  <input type="radio" class="clasemain" name="clasemain" value="paladin">Paladín  
+  <input type="radio" class="clasemain" name="clasemain" value="cazador">Cazador
+  <input type="radio" class="clasemain" name="clasemain" value="picaro">Picaro
+  <input type="radio" class="clasemain" name="clasemain" value="sacerdote">Sacerdote</p>
+  <p><input type="radio" class="clasemain" name="clasemain" value="druida">Druida
+  <input type="radio" class="clasemain" name="clasemain" value="chaman">Chamán
+  <input type="radio" class="clasemain" name="clasemain" value="mago">Mago
+  <input type="radio" class="clasemain" name="clasemain" value="brujo">Brujo
+  <input type="radio" class="clasemain" name="clasemain" value="dk">Caballero de la Muerte</p>
+  <p><strong>- Rama Principal:</strong>  <input type="text" name="ramamain"/></p>
+  <p><strong>- Rama Secundaria:</strong> <input type="text" name="ramasecundaria"/></p>
+
+
+
+   <p><strong>- Profesiones principales:</strong></p>
+<p><input type="checkbox" class="clasemain" name="profesion" value="alquimia"/>Alquimia
+<input type="checkbox" class="clasemain" name="profesion" value="desuello"/>Desuello
+<input type="checkbox" class="clasemain" name="profesion" value="encantamiento"/>Encantamiento
+<input type="checkbox" class="clasemain" name="profesion" value="herboristeria"/>Herboristería
+<input type="checkbox" class="clasemain" name="profesion" value="herreria"/>Herrería</p>
+<p><input type="checkbox" class="clasemain" name="profesion" value="ingenieria"/>Ingeniería
+<input type="checkbox" class="clasemain" name="profesion" value="inscripcion"/>Inscripción
+<input type="checkbox" class="clasemain" name="profesion" value="joyeria"/>Joyería
+<input type="checkbox" class="clasemain" name="profesion" value="mineria"/>Minería
+<input type="checkbox" class="clasemain" name="profesion" value="peleteria"/>Peletería
+<input type="checkbox" class="clasemain" name="profesion" value="sastreria"/>Sastrería</p>
+
+<p><strong>- Nivel de las profesiones principales:</strong></p>
+<p><input type="checkbox" class="clasemain" name="profesion" value="arqueologia"/>Arqueología
+<input type="checkbox" class="clasemain" name="profesion" value="cocina"/>Cocina
+<input type="checkbox" class="clasemain" name="profesion" value="pesca"/>Pesca
+<input type="checkbox" class="clasemain" name="profesion" value="primerosauxilios"/>Primeros Auxilios</p>
+
+
+ <p><strong>  - Anteriores hermandades: </strong> <input type="text" name="guilds"/></p>
+<p><strong>- ¿Por qué las abandonaste?:</strong></p>
+<p> <textarea name="abandonoguild" rows="5" cols="40"></textarea> </p>
+<p><strong>- ¿Es éste tu personaje principal?:</strong> <input type="radio" class="clasemain" name="principalpj" value="si"> Si <input type="radio" class="clasemain" name="principalpj" value="no"> No</p>
+<p><strong>- ¿Te han baneado algún Pj?:</strong><input type="radio" class="clasemain" name="baneado" value="si">Si <input type="radio" class="clasemain" name="baneado" value="no">No</p>
+<p><strong>- ¿Por qué?:</strong></p>
+<p><textarea name="banporque" rows="5" cols="40"></textarea></p>
+
+<!--<p><input  type="submit" value="Enviar">
+<input type="reset" value="Restablecer todo"></p>-->
+
+<span id="botones" class="input-group-btn">
+    <button id="boton1" class="btn btn-default" type="submit">Enviar Apply</button>
+    <button id="boton2" class="btn btn-default" type="reset">Borrar Todo</button>
+</span>
+
+   </fieldset>
+
+
+   </form>
+
+
+</div>
+
+ </div>
+
